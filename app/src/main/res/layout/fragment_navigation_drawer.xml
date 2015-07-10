@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D0D0D0"
+    tools:context="com.example.lepton.materialtest.NavigationDrawerFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:id="@+id/containerDrawerImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FB8C00">
+
+        <ImageView
+            android:layout_width="280dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="@dimen/margin_top"
+            android:src="@drawable/ic_abstract" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/drawerlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/containerDrawerImage"
+
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>
